@@ -1,0 +1,38 @@
+ #imgnav{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+
+.imgnavbox{
+    width: 2rem;
+}
+
+.baner{
+    height: 20rem;
+    
+  
+}
+
+#banerimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#banerp{
+    color: white;
+    font-weight: bold;
+}
+.banerparagraf{
+    position: absolute;
+    background-color:black;
+    left: 41rem;
+    top: 10rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+    opacity: 0.3;
+}
+
