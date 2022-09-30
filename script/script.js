@@ -1,6 +1,7 @@
 let tasks= JSON.parse(tasksJson);
 
 function updateHTML (){
+  
 for(let task of tasks){
     document.getElementById("mainbox").innerHTML += `
     <div class="card shadow" style="width: 18rem;">
@@ -20,18 +21,15 @@ for(let task of tasks){
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
     <div class="d-flex">
-    <div> <img src="/images/importance.png" ></div>
+    <div> <img class="importancebtn" src="/images/importance.png" ></div>
     <p>Priority level:</p>
-    <div><button id="btn">${task.importance}</button></div>
+    <div ><p class="imptask">${task.importance}</p></div>
     </div>
     <div class="d-flex">
     <div> <img src="/images/deadline.png" ></div>
-    <p>Deadline: ${task.deadline}</p>
-    
+    <div><p>Deadline: ${task.deadline}</p></div>
     </div>
-
     </li>
-    
   </ul>
   <div class="d-flex justify-content-end gap-2 p-3">
   <input class="bg-danger" type="submit" value="Delete">
@@ -42,3 +40,37 @@ for(let task of tasks){
 }
 }
 updateHTML()
+addEvent()
+
+
+function importance(index){
+    if(tasks[index].importance !=5 ){
+    tasks[index].importance++
+    document.getElementsByClassName("imptask")[index].innerHTML=tasks[index].importance
+   
+} 
+
+
+}
+
+function addEvent (){
+let importantbtns = document.getElementsByClassName("importancebtn")
+
+for(let i=0; i<importantbtns.length; i++){
+    importantbtns[i].addEventListener("click",function(){
+        importance(i)
+    })
+}
+}
+
+document.getElementById("sort").addEventListener("click",sortByImportance)
+
+function sortByImportance (){
+    tasks.sort((a,b)=> a.importance-b.importance)
+    document.getElementById("mainbox").innerHTML=""
+    updateHTML()
+    addEvent()
+
+}
+
+
