@@ -2,50 +2,62 @@ let tasksJson = `[
     {
     "taskName": "shopping", 
 
-    "image": "img/groceries.jpg", 
+    "image": "/images/groceries.jpg", 
 
     "description": "Shop for weekly groceries at Billa and Hofer.", 
 
-    "importance": 0    
+    "importance": 0 ,
+    
+    "deadline" : "20.01.2023"
     },{
         "taskName": "take a dog for a walk", 
     
-        "image": "img/groceries.jpg", 
+        "image": "/images/dog.webp", 
     
         "description": "go to the Wäringer Park", 
     
-        "importance": 0    
+        "importance": 0 ,
+
+        "deadline" : "22.01.2023"   
         },{
             "taskName": "gym", 
         
-            "image": "img/groceries.jpg", 
+            "image": "/images/gym.jpg", 
         
             "description": "Train upper body", 
         
-            "importance": 0    
+            "importance": 0   ,
+
+            "deadline" : "21.01.2023" 
             },{
                 "taskName": "coffe", 
             
-                "image": "img/groceries.jpg", 
+                "image": "/images/coffee.jpg", 
             
                 "description": "Go for a coffe with Marko", 
             
-                "importance": 0   
+                "importance": 0 ,
+
+                "deadline" : "25.01.2023"  
                 },{
                     "taskName": "learn", 
                 
-                    "image": "img/groceries.jpg", 
+                    "image": "/images/learn.jpg", 
                 
                     "description": "Learn coding", 
                 
-                    "importance": 0    
+                    "importance": 0 ,
+
+                    "deadline" : "26.01.2023"   
                     },{
                         "taskName": "bicycle", 
                     
-                        "image": "img/groceries.jpg", 
+                        "image": "/images/bicycle.jpg", 
                     
-                        "description": "Repair flat tire a bicycle", 
+                        "description": "Repair flat tire of bicycle", 
                     
-                        "importance": 0   
+                        "importance": 0   ,
+
+                        "deadline" : "25.01.2023"
                         }
 ]`
