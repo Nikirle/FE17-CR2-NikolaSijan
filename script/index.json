@@ -1,0 +1,51 @@
+let tasksJson = `[
+    {
+    "taskName": "shopping", 
+
+    "image": "img/groceries.jpg", 
+
+    "description": "Shop for weekly groceries at Billa and Hofer.", 
+
+    "importance": 0    
+    },{
+        "taskName": "take a dog for a walk", 
+    
+        "image": "img/groceries.jpg", 
+    
+        "description": "go to the Wäringer Park", 
+    
+        "importance": 0    
+        },{
+            "taskName": "gym", 
+        
+            "image": "img/groceries.jpg", 
+        
+            "description": "Train upper body", 
+        
+            "importance": 0    
+            },{
+                "taskName": "coffe", 
+            
+                "image": "img/groceries.jpg", 
+            
+                "description": "Go for a coffe with Marko", 
+            
+                "importance": 0   
+                },{
+                    "taskName": "learn", 
+                
+                    "image": "img/groceries.jpg", 
+                
+                    "description": "Learn coding", 
+                
+                    "importance": 0    
+                    },{
+                        "taskName": "bicycle", 
+                    
+                        "image": "img/groceries.jpg", 
+                    
+                        "description": "Repair flat tire a bicycle", 
+                    
+                        "importance": 0   
+                        }
+]`
