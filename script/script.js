@@ -23,7 +23,7 @@ for(let task of tasks){
     <div class="d-flex">
     <div> <img class="importancebtn" src="/images/importance.png" ></div>
     <p>Priority level:</p>
-    <div ><p class="imptask">${task.importance}</p></div>
+    <div ><p id="import" class="imptask">${task.importance}</p></div>
     </div>
     <div class="d-flex">
     <div> <img src="/images/deadline.png" ></div>
@@ -43,11 +43,13 @@ updateHTML()
 addEvent()
 
 
+
 function importance(index){
     if(tasks[index].importance !=5 ){
     tasks[index].importance++
     document.getElementsByClassName("imptask")[index].innerHTML=tasks[index].importance
    
+
 } 
 
 
@@ -58,8 +60,12 @@ let importantbtns = document.getElementsByClassName("importancebtn")
 
 for(let i=0; i<importantbtns.length; i++){
     importantbtns[i].addEventListener("click",function(){
-        importance(i)
+       importance(i)
+       
+    
+        
     })
+    
 }
 }
 
@@ -72,5 +78,4 @@ function sortByImportance (){
     addEvent()
 
 }
-
 

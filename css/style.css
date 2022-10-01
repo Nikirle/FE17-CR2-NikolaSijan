@@ -29,10 +29,41 @@
 .banerparagraf{
     position: absolute;
     background-color:black;
-    left: 41rem;
+    left: 40rem;
     top: 10rem;
     font-size: 2rem;
     padding: 1.5rem;
     opacity: 0.3;
 }
 
+.underbaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 10rem;
+   
+}
+
+.pfooter{
+    color: white;
+    font-size: small;
+}
+
+.subbtn{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.text{
+    width: 29rem;
+}

@@ -58,6 +58,36 @@ let tasksJson = `[
                     
                         "importance": 0   ,
 
-                        "deadline" : "25.01.2023"
-                        }
+                        "deadline" : "26.01.2023"
+                        },{
+                            "taskName": "football", 
+                        
+                            "image": "/images/football.jpg", 
+                        
+                            "description": "Play footbal in 21. Betzirk", 
+                        
+                            "importance": 0   ,
+    
+                            "deadline" : "23.01.2023"
+                            },{
+                                "taskName": "pizza", 
+                            
+                                "image": "/images/pizza.webp", 
+                            
+                                "description": "Make pizza for your friends", 
+                            
+                                "importance": 0   ,
+        
+                                "deadline" : "22.01.2023"
+                                },{
+                                    "taskName": "fishing", 
+                                
+                                    "image": "/images/fishing.webp", 
+                                
+                                    "description": "go fishing with your brother.", 
+                                
+                                    "importance": 0   ,
+            
+                                    "deadline" : "25.01.2023"
+                                    }
 ]`
